@@ -1,0 +1,80 @@
+/* Custom Styles */
+.hero {
+  background-image: url("https://via.placeholder.com/1200x600");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Media Queries for Extra-Large Screens (XL) */
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+}
+
+/* Media Queries for Large Screens (L) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Media Queries for Medium Screens (M) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Media Queries for Small Screens (S) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Media Queries for Extra-Small Screens (XS) */
+@media (max-width: 575px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Hover effect for cards */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
