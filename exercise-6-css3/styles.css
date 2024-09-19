@@ -1,0 +1,68 @@
+/* transition starts */
+/* transition: [property] [duration] [timing-function] [delay]; */
+.transition-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: lightblue;
+  transition: background-color 0.5s ease; /* Smooth change in background-color */
+}
+
+.transition-btn:hover {
+  background-color: orange;
+}
+/* transition ends */
+
+/* transform starts */
+/* transform: [transformation-function]; */
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgreen;
+  transition: transform 0.5s;
+}
+
+.box:hover {
+  transform: rotate(45deg) scale(1.2) translateX(50%); /* Rotates and scales on hover */
+}
+/* transform ends */
+
+/* transform opacity starts */
+.fade-box {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightcoral;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Smooth transition of opacity */
+}
+
+.fade-box:hover {
+  opacity: 0.2;
+}
+/* transform opacity ends */
+
+/* keyframe animation */
+.animated-box {
+  margin: 20px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  animation: bounce 2s infinite; /* Applies the keyframe animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(-50px); /* Moves up */
+  }
+  100% {
+    transform: translateY(0); /* Moves back down */
+  }
+}
+/* keyframe animation */
